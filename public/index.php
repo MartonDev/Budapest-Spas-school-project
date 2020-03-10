@@ -4,7 +4,7 @@
 
  ?>
 
-xxxx
+Home
 
 <?php
 

@@ -1,8 +1,7 @@
 # turning on the rewrite engine
 RewriteEngine On
 
-# rewriting the api/action_name url to api.php?action=action_name
-RewriteRule ^api/([^/]+)/? api.php?action=$1
+RewriteRule ^furdo/([^/]+)/? spa.php?spa-name=$1
 
 # removing .php extension from every link
 RewriteCond %{REQUEST_FILENAME} !-f
