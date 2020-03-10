@@ -12,11 +12,11 @@
     function __construct($spa_code_name) {
 
       $spaDataFile = fopen('../src/data/data.json', 'r') or die('Unable to open data JSON');
-      $spaAllData = json_decode(fread($spaDataFile, filesize('../src/data/data.json')), true);
+      $spaAllData = json_decode(fread($spaDataFile, filesize('../src/data/data.json')), true)['spas'];
 
       foreach($spaAllData as $key => $value) {
 
-        if(strtolower(str_replace(' ', '-', $key)) == $spa_code_name) {
+        if(strtr(strtolower(str_replace(' ', '-', $key)), $this->getAccentedLetters()) == $spa_code_name) {
 
           $this->spaName = $key;
           $this->spaData = $value;
@@ -55,6 +55,12 @@
     public function getText() {
 
       return $this->spaData['text'];
+
+    }
+
+    public function getAccentedLetters() {
+
+      return array('Ő' => 'O', 'ő' => 'o', 'Ú' => 'U', 'ú' => 'u', 'Ö' => 'O', 'ö' => 'o', 'Ü' => 'U', 'ü' => 'u', 'Ó' => 'O', 'ó' => 'o', 'É' => 'E', 'é' => 'e', 'Á' => 'A', 'á' => 'a', 'Ű' => 'U', 'ű' => 'u', 'Í' => 'I', 'í' => 'i');
 
     }
 

@@ -1,10 +1,15 @@
 {
 
-  "Szechenyi furdo": {
+  "order": ["Széchenyi fürdő"],
+  "spas": {
 
-    "author": "Marton Lederer",
-    "galery": ["link1", "link2"],
-    "text": "Text here"
+    "Széchenyi fürdő": {
+
+      "author": "Marton Lederer",
+      "galery": ["link1", "link2"],
+      "text": "Text here"
+
+    }
 
   }
 

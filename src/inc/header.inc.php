@@ -11,12 +11,12 @@
 
     <meta charset="utf-8">
 
-    <title>Starter kit</title>
+    <title>Fürdőkereső</title>
 
     <link rel="shortcut icon" type="image/png" href="assets/img/icon.png"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="description">
+    <meta name="description" content="Zsombi és Marci projektje">
     <meta name="theme-color" content="#23B870">
 
     <link rel="stylesheet" href="assets/css/style.css" />
