@@ -18,8 +18,12 @@
 
   <div class="container">
 
-    <h1><?php echo $spa->getName() ?></h1>
+    <h1 class="spa-name"><?php echo $spa->getName() ?></h1>
     <h2><?php echo $spa->getAuthor() ?></h2>
+
+    <p>Gratulálunk! Megtaláltátok a <?php echo $spa->getName() ?>-t! Olvassatok tovább egy-két érdekes információért!<br /><?php echo $spa->getText() ?></p>
+
+    <h1 class="subtitle">Galéria</h1>
 
   </div>
 
