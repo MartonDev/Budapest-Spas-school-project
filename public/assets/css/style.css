@@ -5,8 +5,8 @@
 *
 */
 
-@import "https://indestructibletype.com/fonts/Jost.css";
-@import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
+@import "//indestructibletype.com/fonts/Jost.css";
+@import "//use.fontawesome.com/releases/v5.2.0/css/all.css";
 
 body {
 
@@ -75,6 +75,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 15px 20px 0;
+  animation: show-panel .54s;
 
 }
 
@@ -106,5 +107,62 @@ body {
   font-size: 24px;
   margin: 0 0 8px 0;
   font-weight: 500;
+
+}
+
+.spa .container .galery img {
+
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+
+}
+
+.spa .container .galery img:hover {
+
+  opacity: .7;
+
+}
+
+@keyframes show-panel {
+
+  from {
+
+    bottom: -100vh;
+
+  }
+
+  to {
+
+    bottom: 0;
+
+  }
+
+}
+
+@-webkit-keyframes show-panel {
+
+  from {
+
+    bottom: -100vh;
+
+  }
+
+  to {
+
+    bottom: 0;
+
+  }
+
+}
+
+@media screen and (max-width: 790px) {
+
+
 
 }

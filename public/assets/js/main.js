@@ -8,3 +8,10 @@ jQuery(function($) {
   });
 
 });
+
+function openGalery(page) {
+
+  let gallery = new PhotoSwipe(document.querySelectorAll('.pswp')[0], PhotoSwipeUI_Default, galeryItems, {index: page});
+  gallery.init();
+
+}

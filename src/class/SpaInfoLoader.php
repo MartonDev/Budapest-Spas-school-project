@@ -8,6 +8,7 @@
 
     private $spaData = null;
     private $spaName = null;
+    private $next = null;
 
     function __construct($spa_code_name) {
 
@@ -20,7 +21,10 @@
 
           $this->spaName = $key;
           $this->spaData = $value;
-          break;
+
+        }else if($this->spaData != null) {
+
+          $this->next = $key;
 
         }
 
@@ -64,7 +68,13 @@
 
     }
 
-    public function getAccentedLetters() {
+    public function getNextSpa() {
+
+      return $this->next;
+
+    }
+
+    private function getAccentedLetters() {
 
       return array('Ő' => 'O', 'ő' => 'o', 'Ú' => 'U', 'ú' => 'u', 'Ö' => 'O', 'ö' => 'o', 'Ü' => 'U', 'ü' => 'u', 'Ó' => 'O', 'ó' => 'o', 'É' => 'E', 'é' => 'e', 'Á' => 'A', 'á' => 'a', 'Ű' => 'U', 'ű' => 'u', 'Í' => 'I', 'í' => 'i');
 
