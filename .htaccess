@@ -1,0 +1,7 @@
+# this file helps securing the entire website, by redirecting every requests to the public folder. The src folder is protected and only the php scripts can access it.
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]

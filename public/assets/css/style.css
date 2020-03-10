@@ -1,0 +1,52 @@
+/*
+*
+* Created by Marton
+* https://marton.lederer.hu
+*
+*/
+
+@import "https://indestructibletype.com/fonts/Jost.css";
+@import "https://use.fontawesome.com/releases/v5.2.0/css/all.css";
+
+body {
+
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Jost, sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #00c968;
+
+}
+
+::selection {
+
+  background: #00c968;
+  color: #fff;
+
+}
+
+::-moz-selection {
+
+  background: #00c968;
+  color: #fff;
+
+}
+
+::-webkit-scrollbar {
+
+  width: 7px;
+
+}
+
+::-webkit-scrollbar-track {
+
+  background-color: #fff;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #00c968;
+
+}
