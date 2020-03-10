@@ -58,6 +58,12 @@
 
     }
 
+    public function getThumbnail() {
+
+      return $this->spaData['thumbnail'];
+
+    }
+
     public function getAccentedLetters() {
 
       return array('Ő' => 'O', 'ő' => 'o', 'Ú' => 'U', 'ú' => 'u', 'Ö' => 'O', 'ö' => 'o', 'Ü' => 'U', 'ü' => 'u', 'Ó' => 'O', 'ó' => 'o', 'É' => 'E', 'é' => 'e', 'Á' => 'A', 'á' => 'a', 'Ű' => 'U', 'ű' => 'u', 'Í' => 'I', 'í' => 'i');

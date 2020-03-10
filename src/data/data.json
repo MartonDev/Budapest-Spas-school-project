@@ -6,6 +6,7 @@
     "Széchenyi fürdő": {
 
       "author": "Marton Lederer",
+      "thumbnail": "szechenyi.png",
       "galery": ["link1", "link2"],
       "text": "Text here"
 
