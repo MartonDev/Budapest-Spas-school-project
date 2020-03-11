@@ -1,10 +1,13 @@
 <?php
 
   require '../src/inc/header.inc.php';
+  require '../src/class/Spas.php';
+
+  $spas = new Spas();
 
  ?>
 
-Home
+<div id="map" class="map"></div>
 
 <?php
 
