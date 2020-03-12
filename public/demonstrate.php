@@ -11,7 +11,7 @@
     <h1 class="spa-name">Gellért fürdő</h1>
     <h2>by Lederer Márton</h2>
 
-    <p>Gratulálunk! Megtaláltátok a Gellért fürdő-t! Olvassatok tovább egy-két érdekes információért! A következő állomást az oldal legalján láthatod.<br /><br /></p>
+    <p>Gratulálunk! Megtaláltátok a Gellért fürdő-t! Olvassatok tovább egy-két érdekes információért! A következő állomást az oldal legalján láthatod.<br /><br />1918 óta Budapest szecessziós gyógyfürdője. A Gellért Hotel és Gyógyfürdő 1912–18-ban épült szecessziós stílusban, az építkezésen orosz hadifoglyok is dolgoztak az első világháború utolsó évében. <br /><br />A fürdő elkészülésekor Európa legkorszerűbb fürdője volt, saját kórházzal. Az eredeti víznyerő forrása a ma a Gellért tér alatt található kút volt, manapság azonban már három másik kutat használnak, melyek a Rác-fürdővel összekötött, a Gellért-hegy alatt húzódó alagútnál helyezkednek el. <br /><br />A fürdő több mint 200 éve működik kisebb-nagyobb felújításokkal és kórházi részlege még mindig fogad betegeket.</p>
 
     <h1 class="subtitle">Galéria</h1>
 
@@ -38,7 +38,9 @@
 
     <h1 class="subtitle">Következő állomás</h1>
 
-    <p>Oldd meg a rejtvényt, hogy továbbhaladhass!</p>
+    <p>Oldd meg a rejtvényt, hogy továbbhaladhass!<br />Milyen stílusban épült a Gellért fürdő és melyik évben kezdték el az építkezést?</p>
+
+    <input type="text" placeholder="Válasz...">
 
   </div>
 
