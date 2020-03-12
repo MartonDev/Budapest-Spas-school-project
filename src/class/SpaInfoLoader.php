@@ -17,7 +17,7 @@
 
       foreach($spaAllData as $key => $value) {
 
-        if(strtr(strtolower(str_replace(' ', '-', $key)), $this->getAccentedLetters()) == $spa_code_name) {
+        if((strtr(strtolower(str_replace(' ', '-', $key)), $this->getAccentedLetters()) . '-' . $value['suffix']) == $spa_code_name) {
 
           $this->spaName = $key;
           $this->spaData = $value;
@@ -25,6 +25,7 @@
         }else if($this->spaData != null) {
 
           $this->next = $key;
+          break;
 
         }
 
@@ -65,6 +66,12 @@
     public function getThumbnail() {
 
       return $this->spaData['thumbnail'];
+
+    }
+
+    public function getSuffix() {
+
+      return $this->spaData['suffix'];
 
     }
 
