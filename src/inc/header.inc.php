@@ -13,7 +13,7 @@
 
     <title>Fürdőkereső</title>
 
-    <link rel="shortcut icon" type="image/png" href="assets/img/icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="<?php echo (strpos($_SERVER['REQUEST_URI'], 'furdo') !== false) ? '../' : '' ?>assets/img/icon.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Zsombi és Marci projektje">

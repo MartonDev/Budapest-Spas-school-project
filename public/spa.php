@@ -14,30 +14,38 @@
 
  ?>
 
-<div class="spa" style="background-image: url(../assets/img/thumbnails/<?php echo $spa->getThumbnail(); ?>);">
+<div class="spa" style="background-image: url(<?php echo $spa->getThumbnail(); ?>);">
 
   <div class="container">
 
     <h1 class="spa-name"><?php echo $spa->getName() ?></h1>
     <h2><?php echo $spa->getAuthor() ?></h2>
 
-    <p>Gratulálunk! Megtaláltátok a <?php echo $spa->getName() ?>-t! Olvassatok tovább egy-két érdekes információért! A következő állomást az oldal legalján láthatod.<br /><?php echo $spa->getText() ?></p>
+    <p>Gratulálunk! Megtaláltátok a <?php echo $spa->getName() ?>-t! Olvassatok tovább egy-két érdekes információért! A következő állomást az oldal legalján láthatod.<br /><br /><?php echo $spa->getText() ?></p>
 
     <h1 class="subtitle">Galéria</h1>
 
     <div class="galery">
 
-      <?php for($i = 0; $i < count($spa->getGalery()); $i++) { ?>
+      <?php
+       $i = 0;
+       foreach($spa->getGalery() as $key => $value) { ?>
 
-      <img height="200" src="<?php echo $spa->getGalery()[$i] ?>" onclick="openGalery(<?php echo $i ?>)">
+      <img src="<?php echo $key ?>" onclick="openGalery(<?php echo $i ?>)">
 
-      <?php } ?>
+      <?php
+      $i++;
+      } ?>
 
     </div>
+
+    <?php if($spa->getNextSpa() != '') { ?>
 
     <h1 class="subtitle">Következő állomás</h1>
 
     <p><?php echo $spa->getNextSpa() ?></p>
+
+    <?php } ?>
 
   </div>
 
@@ -111,13 +119,14 @@
 
   let galeryItems = [
 
-    <?php for($i = 0; $i < count($spa->getGalery()); $i++) { ?>
+    <?php foreach($spa->getGalery() as $key => $value) { ?>
 
     {
 
-        src: '<?php echo $spa->getGalery()[$i] ?>',
+        src: '<?php echo $key ?>',
         w: 600,
-        h: 400
+        h: 400,
+        title: 'Forrás: <?php echo $value ?>'
 
     },
 
