@@ -19,7 +19,7 @@
   <div class="container">
 
     <h1 class="spa-name"><?php echo $spa->getName() ?></h1>
-    <h2><?php echo $spa->getAuthor() ?></h2>
+    <h2>by <?php echo $spa->getAuthor() ?></h2>
 
     <p>Gratulálunk! Megtaláltátok a <?php echo $spa->getName() ?>-t! Olvassatok tovább egy-két érdekes információért! A következő állomást az oldal legalján láthatod.<br /><br /><?php echo $spa->getText() ?></p>
 
