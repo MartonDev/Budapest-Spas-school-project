@@ -124,8 +124,8 @@
     {
 
         src: '<?php echo $key ?>',
-        w: 600,
-        h: 400,
+        w: 0,
+        h: 0,
         title: 'Forrás: <?php echo $value ?>'
 
     },
